@@ -21,9 +21,16 @@ function App() {
       fetch(`${api.url}weather?q=${query}&units=metric&appid=${api.key}`)
         .then(resp => resp.json())
         .then(result => { setWeather(result); setQuery(''); console.log(result) });
+    } else if (!query) {
+      snackBar();
+
     }
   }
-
+  function snackBar() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+  }
 
   function dateFunction(d) {
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -97,6 +104,7 @@ function App() {
 
           </div>
         )}
+        <div id="snackbar">Error: add a city name</div>
       </main>
     </div>
   )

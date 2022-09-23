@@ -3,7 +3,8 @@
 body{background-color: rgb(27, 27, 27);}
 
 .app{
-  max-width: 800px;
+  max-width: 500px;
+  min-width: 300px;
   height:100vh;
   min-height: 100vh;
   margin: auto;
@@ -19,25 +20,25 @@ main{
   background: rgba(0, 0, 0, 0.575);
 }
 
-.app-name{margin: 50px 0 30px 0;font-size: 30px;font-weight: 400;}
-.comps{font-size: 16px;font-weight: 400;}
+.app-name{margin: 30px 0 15px 0;font-size: 30px;font-weight: 400;}
+.comps{font-size: 15px;font-weight: 400;}
 
 .welcome-text{
   text-align: center;
-  max-width: 80%;
-  margin: 16vh auto 0 auto;
+  max-width: 70%;
+  margin: 12vh auto 0 auto;
 }
-.welcome-text h1{font-size: 50px ;text-transform: uppercase;font-weight: 400;}
-.welcome-text p{font-size: 14px;}
+.welcome-text h1{font-size: 40px ;text-transform: uppercase;font-weight: 400;}
+.welcome-text p{font-size: 15px;}
 
 .search-bar{
-  max-width: 86%;
+  max-width: 80%;
   margin: auto;
   transform: translateY(50%);
   display: flex;
   justify-content: space-between;
   background-color: rgb(235, 246, 255);
-  border-radius: 6px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -45,7 +46,7 @@ main{
   display: block;
   border: 0;
   outline: 0;
-  padding: 4px 22px;
+  padding: 2px 20px;
   background-color: rgb(182, 182, 182);
   cursor: pointer;
   display: flex;
@@ -75,42 +76,63 @@ main{
 
 
 .location-box, .welcome-box{
-  max-width: 86%;
+  max-width: 80%;
   margin: auto;
   color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 6px;
   transform: translateY(10%);
 }
 
-.location{margin-bottom: 20px;font-size: 36px;font-weight: 400;}
-.date{font-size: 24px;font-weight: 400;}
+.location{margin-bottom: 20px;font-size: 30px;font-weight: 400;}
+.date{font-size: 20px;font-weight: 400;}
 .temp{
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 6px;
 }
 .type{
-  width: 100px;
+  width: 80px;
   font-size: 18px;
-  padding: 4px 16px;
-  border-radius: 40px;
+  padding: 2px 8px;
+  border-radius: 20px;
   font-weight: 300;
   border: white 1px solid;
   text-align: center;
 }
 
 .other-dets{
-  margin: 100px auto 0 auto;
-  padding: 20px;
+  margin: 50px auto 0 auto;
+  padding: 10px;
   border: white 1px solid;
-  border-radius: 6px;
+  border-radius: 3px;
   text-align: left;
 }
-.others{margin-top: 18px;font-weight: lighter;}
+.others{margin-top: 10px;font-weight: lighter;}
 
+#snackbar {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -125px;
+  background-color: rgb(252, 18, 18);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  font-size: 17px;
+}
 
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
 @media(max-width: 800px){
   .app{background-size: cover;}
