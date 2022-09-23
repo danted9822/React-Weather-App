@@ -1,3 +1,37 @@
+
+## Description
+Basic weather app made with React and OpenWeatherMap API.
+    
+    
+## Installation:
+
+1. Clone the repo:
+
+        git clone https://github.com/danted9822/Weather-App-React.git
+        
+2. Install dependencies:
+
+        npm install
+
+3. Register:
+
+        Go to https://home.openweathermap.org/users/sign_up and create your own account.
+
+4. Get api key:
+
+       To get your API key, click on your username in the top right corner, and then on "my API keys".
+       Create an API key if it doesn't already exist.
+       
+5. Insert key:
+
+       Insert your api key in the App.js file you will found a line, key: "YOUR_API_KEY"
+       Change the content with your key.
+        
+6. Final step:
+
+        npm start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
