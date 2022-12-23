@@ -51,6 +51,7 @@ function App() {
     else if (weather.weather[0].main === "Clear") return "app sunny";
     else if (weather.weather[0].main === "Clouds") return "app cloud";
     else if (weather.weather[0].main === "Mist") return "app mist";
+    else if (weather.weather[0].main === "Fog") return "app mist";
     else return "app cold";
   }
 
