@@ -1,104 +1,49 @@
+# Weather App
 
-## Description
-Basic weather app made with React and OpenWeatherMap API.
-    
-    
-## Installation:
+A lightweight, responsive weather application built with React, consuming data from the OpenWeatherMap API.
 
-1. Clone the repo:
+## Features
+* **Current Weather:** Real-time temperature and weather conditions for searched cities.
+* **Responsive Design:** Optimized for different screen sizes.
+* **Dynamic Backgrounds:** Background shifts based on weather conditions (sunny, rainy, cloudy, etc.).
+* **Detailed Metrics:** Shows humidity, wind speed, pressure, and temperature range.
 
-        git clone https://github.com/danted9822/Weather-App-React.git
-        
+## Technologies
+* React.js
+* OpenWeatherMap API
+* CSS3 (Vanilla)
+
+## Getting Started
+
+### Prerequisites
+* [Node.js](https://nodejs.org/) installed
+* An [OpenWeatherMap API Key](https://home.openweathermap.org/)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/danted9822/Weather-App-React.git
+   ```
 2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Setup Environment Variables:
+   Create a `.env` file in the root directory and add your API key:
+   ```text
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
+4. Start the application:
+   ```bash
+   npm start
+   ```
 
-        npm install
+## Future Roadmap
+* [ ] **Geolocation:** Detect user location automatically on load.
+* [ ] **Favorites:** Save frequently searched cities using LocalStorage.
+* [ ] **Error Handling:** Improve UI feedback for invalid cities or network errors.
+* [ ] **Units:** Add a toggle for Celsius and Fahrenheit.
+* [ ] **Forecast:** Display 5-day/3-hour weather forecasts.
 
-3. Register:
-
-        Go to https://home.openweathermap.org/users/sign_up and create your own account.
-
-4. Get api key:
-
-       To get your API key, click on your username in the top right corner, and then on "my API keys".
-       Create an API key if it doesn't already exist.
-       
-5. Insert key:
-
-       Insert your api key in the App.js file you will found a line, key: "YOUR_API_KEY"
-       Change the content with your key.
-        
-6. Final step:
-
-        npm start
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+*Developed by Péter Halász.*
