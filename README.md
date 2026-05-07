@@ -39,11 +39,16 @@ A lightweight, responsive weather application built with React, consuming data f
    ```
 
 ## Future Roadmap
-* [ ] **Geolocation:** Detect user location automatically on load.
-* [ ] **Favorites:** Save frequently searched cities using LocalStorage.
-* [ ] **Error Handling:** Improve UI feedback for invalid cities or network errors.
-* [ ] **Units:** Add a toggle for Celsius and Fahrenheit.
-* [ ] **Forecast:** Display 5-day/3-hour weather forecasts.
+* [x] **Geolocation:** Detect user location automatically on load.
+* [x] **Use My Location Button:** Manual geolocation refresh from the search area.
+* [x] **Favorites:** Save frequently searched cities using LocalStorage.
+* [x] **Smart Search:** Autocomplete dropdown with keyboard navigation.
+* [x] **Recent Searches:** Keep and suggest latest searched cities.
+* [x] **Error Handling:** Inline UI feedback for invalid cities or network errors.
+* [x] **Units:** Toggle between Celsius and Fahrenheit.
+* [x] **Forecast:** Display 5-day weather forecast cards with min/max and icons.
+* [x] **UI Motion:** Subtle dropdown and weather panel animations.
+* [ ] **Next Ideas:** Forecast detail expansion (hourly breakdown per day), richer weather icons/themes, and stronger mobile fine-tuning.
 
 ---
 *Developed by Péter Halász.*
